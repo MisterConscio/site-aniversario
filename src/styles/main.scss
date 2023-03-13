@@ -1,0 +1,53 @@
+$bg-color: #22577A;
+$text-color: #C7F9CC;
+$alt-color1: #57CC99;
+$alt-color2: #80ED99;
+$high-color: #FCD0A1;
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background-color: $bg-color;
+  color: $text-color;
+}
+
+main {
+  .container {
+    max-width: 960px;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1, p {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 54px;
+    margin-top: 0;
+  }
+
+  p {
+    font-size: 1.35rem;
+  }
+
+  span {
+    font-weight: bold;
+    font-size: 1.1em;
+
+    &#data-atual, &#data-aniver {
+      color: $alt-color2;
+    }
+
+    &#contagem-regressiva, &#proxima-idade {
+      color: $high-color;
+      font-size: 2rem;
+    }
+  }
+}
+
